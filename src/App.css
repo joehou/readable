@@ -24,6 +24,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  font-size:18px;
 }
 ol, ul {
   list-style: none;
@@ -54,6 +55,7 @@ body {
 
 .header {
   background: deepskyblue;
+    color:white;
 }
 
 
@@ -87,6 +89,36 @@ body {
 .navigation a:hover {
   background: #00b7f5;
 }
+
+.categories{
+    background: #fafafa!important;
+    border-right:1px #e1e4e8 solid
+}
+
+.categories li a{
+    position: relative;
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    color: #586069;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.categories li a:hover {
+    text-decoration: none;
+    background-color: #eaecef;
+}
+
+.posts{
+    padding:30px;
+}
+
+
 @media all and (max-width: 800px) {
   .navigation {
     justify-content: space-around;
