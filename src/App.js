@@ -41,68 +41,64 @@ class App extends Component {
                       </ul>
                   </div>
                   <div className="posts col-9">
-                      <h2>Posts</h2>
-                    <p>
-                        Monitor the impact of your code changes. Measure performance, track errors, and analyze your application.
+                    <h2>Posts</h2>
+                    <div className="post">
+                      <p>
+                          <b>Monitor the impact of your code changes. Measure performance, track errors,</b>
+                          <br/>and analyze your application.
                         To get started, edit <code>src/App.js</code> and save to reload.
-                    </p>
-                      <p>
-                          This HTML file is a template.
                       </p>
-                      <h2>Posts</h2>
+                    </div>
+                      <div className="post">
+                          <p>
+                              <b>Monitor the impact of your code changes. Measure performance, track errors,</b>
+                              <br/>and analyze your application.
+                                   To get started, edit <code>src/App.js</code> and save to reload.
+                          </p>
+                      </div>
+                      <div className="post">
+                          <p>
+                              <b>Monitor the impact of your code changes. Measure performance, track errors,</b>
+                              <br/>and analyze your application.
+                                   To get started, edit <code>src/App.js</code> and save to reload.
+                          </p>
+                      </div>
+                      <div className="post">
+                          <p>
+                              <b>Monitor the impact of your code changes. Measure performance, track errors,</b>
+                              <br/>and analyze your application.
+                                   To get started, edit <code>src/App.js</code> and save to reload.
+                          </p>
+                      </div>
+                      <div className="post">
+                          <p>
+                              <b>Monitor the impact of your code changes. Measure performance, track errors,</b>
+                              <br/>and analyze your application.
+                                   To get started, edit <code>src/App.js</code> and save to reload.
+                          </p>
+                      </div>
+                      <div className="post">
+                          <p>
+                              <b>Monitor the impact of your code changes. Measure performance, track errors,</b>
+                              <br/>and analyze your application.
+                                   To get started, edit <code>src/App.js</code> and save to reload.
+                          </p>
+                      </div>
+                      <div className="post">
+                          <p>
+                              <b>Monitor the impact of your code changes. Measure performance, track errors,</b>
+                              <br/>and analyze your application.
+                                   To get started, edit <code>src/App.js</code> and save to reload.
+                          </p>
+                      </div><div className="post">
                       <p>
-                          Monitor the impact of your code changes. Measure performance, track errors, and analyze your application.
-                          To get started, edit <code>src/App.js</code> and save to reload.
+                          <b>Monitor the impact of your code changes. Measure performance, track errors,</b>
+                          <br/>and analyze your application.
+                               To get started, edit <code>src/App.js</code> and save to reload.
                       </p>
-                      <p>
-                          This HTML file is a template.
-                      </p>
-                      <h2>Posts</h2>
-                      <p>
-                          Monitor the impact of your code changes. Measure performance, track errors, and analyze your application.
-                          To get started, edit <code>src/App.js</code> and save to reload.
-                      </p>
-                      <p>
-                          This HTML file is a template.
-                      </p>
-                      <h2>Posts</h2>
-                      <p>
-                          Monitor the impact of your code changes. Measure performance, track errors, and analyze your application.
-                          To get started, edit <code>src/App.js</code> and save to reload.
-                      </p>
-                      <p>
-                          This HTML file is a template.
-                      </p>
-                      <h2>Posts</h2>
-                      <p>
-                          Monitor the impact of your code changes. Measure performance, track errors, and analyze your application.
-                          To get started, edit <code>src/App.js</code> and save to reload.
-                      </p>
-                      <p>
-                          This HTML file is a template.
-                      </p>
-                      <h2>Posts</h2>
-                      <p>
-                          Monitor the impact of your code changes. Measure performance, track errors, and analyze your application.
-                          To get started, edit <code>src/App.js</code> and save to reload.
-                      </p>
-                      <p>
-                          This HTML file is a template.
-                      </p>  <h2>Posts</h2>
-                      <p>
-                          Monitor the impact of your code changes. Measure performance, track errors, and analyze your application.
-                          To get started, edit <code>src/App.js</code> and save to reload.
-                      </p>
-                      <p>
-                          This HTML file is a template.
-                      </p>  <h2>Posts</h2>
-                      <p>
-                          Monitor the impact of your code changes. Measure performance, track errors, and analyze your application.
-                          To get started, edit <code>src/App.js</code> and save to reload.
-                      </p>
-                      <p>
-                          This HTML file is a template.
-                      </p>
+                  </div>
+
+
                   </div>
               </div>
           </div>
