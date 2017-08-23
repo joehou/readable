@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 import FaLeanpub from 'react-icons/lib/fa/leanpub'
 import './App.css';
 
 class App extends Component {
   render() {
+    console.log(this.props.categories)
+
     return (
       <div className="App">
           <div className="header">
@@ -107,4 +110,10 @@ class App extends Component {
   }
 }
 
-export default App;
+function mapStateToProps(categories) {
+ return {
+     categories
+ }
+}
+
+export default connect(mapStateToProps)(App)
