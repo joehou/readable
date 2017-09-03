@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import {selectCategory} from './actions'
 import FaLeanpub from 'react-icons/lib/fa/leanpub'
 import './App.css';
 
 class App extends Component {
   render() {
-    console.log(this.props.categories)
+    console.log(this.props.posts)
+    const {categories}  =this.props
+    const {selectCategory} = this.props
 
     return (
       <div className="App">
@@ -25,22 +28,14 @@ class App extends Component {
                   <div className="categories col-3">
                       <h3>Categories</h3>
                       <ul>
-                          <li>
-                              <a href="/marketplace/category/code-quality" class="filter-item py-1 ">
-                                  Code quality
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/marketplace/category/code-review" class="filter-item py-1 ">
-                                  Code review
-                              </a>
-                          </li>
-                          <li>
-                              <a href="/marketplace/category/continuous-integration" class="filter-item py-1 ">
-                                  Continuous integration
-                              </a>
-                          </li>
-
+                          {categories.map( (cat)=>
+                              <li>
+                                  <a onClick={_=> {
+                                      console.log(cat)
+                                      selectCategory(cat)
+                                  } }>{cat.name}</a>
+                              </li>
+                          )}
                       </ul>
                   </div>
                   <div className="posts col-9">
@@ -110,10 +105,19 @@ class App extends Component {
   }
 }
 
-function mapStateToProps(categories) {
- return {
-     categories
+function mapStateToProps(state) {
+    const {selectedCategory, posts} = state
+    return {
+        selectedCategory: selectedCategory,
+        categories: posts.categories,
+        posts: posts.posts
  }
 }
 
-export default connect(mapStateToProps)(App)
+function mapDispatchToProps(dispatch){
+    return{
+        selectCategory: (data)=> dispatch(selectCategory(data))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
