@@ -14,5 +14,5 @@ const headers = {
 export const fetchCategories = () =>
     fetch(`${api}/categories`, { headers })
         .then(res => res.json())
-        .then(data => data.books)
+        .then(data => data.categories)
 

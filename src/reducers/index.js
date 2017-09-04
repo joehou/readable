@@ -1,12 +1,18 @@
 import {combineReducers} from 'redux'
-import  {SELECT_CATEGORY} from '../actions'
+import  {SELECT_CATEGORY,LOAD_CATS_SUCCESS} from '../actions'
 
 
 function posts ( state = initialCategoriesState,action ) {
     switch(action.type){
+        case LOAD_CATS_SUCCESS:
+            return {
+                ...state,
+                categories: action.categories
+            }
         case SELECT_CATEGORY:
             return {
                 ...state,
+                selectedCategory: action.category
             }
         default:
             return state
@@ -16,18 +22,18 @@ function posts ( state = initialCategoriesState,action ) {
 const initialCategoriesState= {
     selectedCategory: "react",
     categories: [
-        {
-            "name": "react",
-            "path": "react"
-        },
-        {
-            "name": "redux",
-            "path": "redux"
-        },
-        {
-            "name": "udacity",
-            "path": "udacity"
-        }
+    {
+        "name": "cake",
+        "path": "cake"
+    },
+    {
+        "name": "redux",
+        "path": "redux"
+    },
+    {
+        "name": "udacity",
+        "path": "udacity"
+    }
 
     ],
     posts:
